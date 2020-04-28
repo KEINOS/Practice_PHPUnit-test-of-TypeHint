@@ -24,13 +24,13 @@ As Sebastian mentions as below, **it is superfluous to test type mismatch**.
 
 But since my bigotry client requires to comply with their requirements and to test so, I needed to be clear if `$this->expectException(\TypeError::class);` can detect the `TypeError`.
 
-## Tested PHP versions
+## Tested PHP/PHPUnit versions
 
-- PHP 7.0.33
-- PHP 7.1.23
-- PHP 7.1.33
-- PHP 7.2.30
-- PHP 7.3.17
-- PHP 7.4.5
+- PHP 7.0.33 / PHPUnit 6.5.14
+- PHP 7.1.23 / PHPUnit 7.5.20
+- PHP 7.1.33 / PHPUnit 7.5.20
+- PHP 7.2.30 / PHPUnit 8.5.4
+- PHP 7.3.17 / PHPUnit 9.1.3
+- PHP 7.4.5   / PHPUnit 9.1.3
 - PHP nightly (PHP 8.0-dev)
   - Note: Tests in PHP "`nightly`" build **will fail** since PHPUnit doesn't support PHP 8.0 yet.
