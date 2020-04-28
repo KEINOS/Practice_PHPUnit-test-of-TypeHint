@@ -14,15 +14,6 @@ final class FunctionSayHelloToTest extends \PHPUnit\Framework\TestCase
         $this->assertSame($result_expect, $result_actual);
     }
 
-    public function testSampleValue()
-    {
-        $value = 1234;
-
-        $result_actual  = \KEINOS\Sample\sayHelloTo($value);
-        $result_expect = 'Hello, World!';
-        $this->assertSame($result_expect, $result_actual);
-    }
-
     public function testIntegerValue()
     {
         $value = 1234;
