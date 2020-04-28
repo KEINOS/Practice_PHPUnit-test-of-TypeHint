@@ -1,0 +1,26 @@
+language: php
+
+install: composer install
+
+php:
+  # Latest Stable of PHP v7.0 (10 Jan 2019)
+  - 7.0.33
+  # Default PHP version in macOS HighSierra(10.13.6) and Mojave(10.14.4)
+  - 7.1.23
+  # Latest Stable of PHP v7.1 (24 Oct 2019)
+  - 7.1.33
+  # Latest Stable of PHP v7.2 (16 April 2020)
+  - 7.2.30
+  # Latest Stable of PHP v7.3 (16 April 2020)
+  - 7.3.17
+  # Current Stable @ 28 April 2020
+  #   https://www.php.net/downloads.php
+  - 7.4.5
+  # latest version of PHP (PHP 8.0.0-dev)
+  - nightly
+
+script: /bin/bash ./tests/run-tests.sh local all
+
+jobs:
+  allow_failures:
+    - php: nightly
