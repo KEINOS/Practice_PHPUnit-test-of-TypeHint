@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/KEINOS/Practice_PHPUnit-test-of-TypeHint.svg?branch=master)](https://travis-ci.org/KEINOS/Practice_PHPUnit-test-of-TypeHint)
+[![](https://api.travis-ci.org/KEINOS/Practice_PHPUnit-test-of-TypeHint.svg?branch=master)](https://travis-ci.org/KEINOS/Practice_PHPUnit-test-of-TypeHint "Build Status")
 
 # PHPUnit Test Sample Of Type Hinting
 
