@@ -18,9 +18,9 @@ final class FunctionSayHelloToTest extends \PHPUnit\Framework\TestCase
     {
         $value = 1234;
 
-        //$this->expectException(\TypeError::class);
-        $this->expectError(\TypeError::class);
+        // https://stackoverflow.com/a/44279632/12102603
+        //$this->expectError(\TypeError::class);
+        $this->expectException(\TypeError::class);
         $result_actual  = \KEINOS\Sample\sayHelloTo($value);
     }
-
 }
