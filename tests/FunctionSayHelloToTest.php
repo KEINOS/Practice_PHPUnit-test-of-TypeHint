@@ -9,8 +9,8 @@ final class FunctionSayHelloToTest extends \PHPUnit\Framework\TestCase
     {
         $value = 'World';
 
-        $result_actual  = \KEINOS\Sample\sayHelloTo($value);
         $result_expect = 'Hello, World!';
+        $result_actual = \KEINOS\Sample\sayHelloTo($value);
         $this->assertSame($result_expect, $result_actual);
     }
 
@@ -19,8 +19,12 @@ final class FunctionSayHelloToTest extends \PHPUnit\Framework\TestCase
         $value = 1234;
 
         // https://stackoverflow.com/a/44279632/12102603
-        //$this->expectError(\TypeError::class);
         $this->expectException(\TypeError::class);
-        $result_actual  = \KEINOS\Sample\sayHelloTo($value);
+        $result_actual = \KEINOS\Sample\sayHelloTo($value);
+
+        // The below test won't work depending on PHPUnit version
+        //$this->expectError(\TypeError::class);
+        //$result_actual = \KEINOS\Sample\sayHelloTo($value);
+ 
     }
 }
